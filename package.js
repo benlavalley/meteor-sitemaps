@@ -6,12 +6,12 @@ Package.describe({
 });
 
 Package.onUse(function (api) {
-	api.versionsFrom('METEOR@1.8.1');
+	api.versionsFrom('METEOR@2.5');
 	api.use(['meteor', 'webapp', 'check', 'underscore'], 'server');
 
 	api.use('gadicohen:robots-txt@0.0.11', 'server');
 
-	api.add_files('sitemaps.js', 'server');
+	api.addFiles('sitemaps.js', 'server');
 	api.export('sitemaps', 'server');
 });
 
